@@ -10,12 +10,12 @@ var con = createConnection({
 const userData = { username: "uwu", password: "123" };
 
 // Perform the insert operation
-con.query("INSERT INTO login SET ?", userData, function (err, result) {
+con.query("select * from login", function (err, result) {
   if (err) {
     console.error("Error inserting data: " + err.stack);
     return;
   }
-  console.log("Data inserted successfully. Insert ID: " + result.insertId);
+  console.log(result);
 });
 
 con.end();
