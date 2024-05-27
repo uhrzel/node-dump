@@ -3,7 +3,7 @@ import { createConnection } from "mysql";
 var con = createConnection({
   host: "localhost",
   user: "root",
-  password: "arzelzolina10",
+  password: "",
   database: "test_table",
 });
 
